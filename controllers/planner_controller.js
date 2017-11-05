@@ -3,6 +3,8 @@ var router = express.Router();
 
 var task = require("../models/planner_con.js");
 router.get("/", function(req, res) {
+        task.all(function(data)
+        {
                 res.render('index', {vlist:data});
         });  //end of all -select
 }); // end router get all records
