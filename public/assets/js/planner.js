@@ -1,7 +1,7 @@
 $(function() {
   console.log("jquery function");
   $("#updbtn").on("click", function(event) {
-    console.log("jqury update");
+    console.log("jquery update");
 
     //console.log('update date',subname,hwdesc,ddate);
     var id = $("#htid").val().trim();
@@ -49,18 +49,18 @@ $(function() {
   });
   //Delete record in table
   $(".delbtn").on("click", function(event) {
-    //event.preventDefault();
+
     console.log("jquery del");
     var id = $(this).data("id");
     console.log('delete in front end jquery id is',id);
-    // Send the DELETE request.
+
     console.log('before ajax');
     $.ajax("/api/delete/" + id, {
       type: "DELETE",
     }).then(
       function() {
         console.log("sending deleted menu item request", id);
-        // Reload the page to get the updated list
+
         location.reload();
       }
     );
