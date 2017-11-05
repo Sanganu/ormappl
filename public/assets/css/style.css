@@ -1,0 +1,15 @@
+
+jumbotron {
+  background-image: url('http://eskipaper.com/images/books-wallpaper-3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.jumbotron h1,.jumbotron h3 {
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+}
+.footer {
+  background-image: url('http://eskipaper.com/images/books-wallpaper-3.jpg');
+
+}

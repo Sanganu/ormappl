@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="utf-8">
+     <title>Student Planner</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link href ="/assets/css/style.css" type = "text/css" rel = "stylesheet">
+      <script src="https://code.jquery.com/jquery.js"></script>
+  		<script src="/assets/js/planner.js"></script>
+  <!--   <link href ="public/assets/css/burger_style.css" type = "text/css" rel = "stylesheet"> -->
+
+   </head>
+   <body>
+        <div class = "jumbotron">
+             <h1>Student Planner  </h1>
+
+        </div>
+        <div class = "container">
+            {{{body}}}
+         </div>
+         <div class = "container">
+               <h3>Enter Homework Details</h3>
+               <div class = "row">
+                     <form class = "create-form">
+                            <div class = "form-group">
+                                  <label>Enter Subject Name :</label>
+                                  <input id = "htsubname" type = "text" name = "htsubname">
+                                  <label>Enter Description :</label>
+                                   <input id = "hthwdesc" type = "text" name = "hthwdesc">
+                                  <button id ="addbtn" class = "btn btn-success" type = "submit">Add Homework Details</button>
+                           </div>
+                     </form>
+               </div>
+         </div>
+         <div class = "container">
+               <h3>Update Homework details</h3>
+               <div class = "row">
+                     <form class = "create-form">
+                            <div cl ass = "form-group">
+                                  <label>Enter Id:</label>
+                                  <input id = "htid" type = "text" name = "htid">
+                                   <label>Subject Name:</label>
+                                  <input id = "htsubname1" type = "text" name = "htsubname1">
+                                  <label>Homework Description:</label>
+                                  <input id = "hthwdesc1" type = "text" name = "hthwdesc1">
+                                  <button id ="updbtn" class = "btn btn-success" type = "submit">Update Homwework Details</button>
+                           </div>
+                     </form>
+               </div>
+         </div>
+
+   </body>
+ </html>

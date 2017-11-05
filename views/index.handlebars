@@ -1,0 +1,19 @@
+  <h3>Hey Buddy, Ready to update your planner !</h3>
+<div class = "container">
+      {{#each vlist}}
+          <div class = "row">
+                  <div class = "col-lg-1">
+                       <p>{{this.id}}</p>
+                  </div>
+                  <div class = "col-lg-3">
+                      <p>{{this.subject_name}}</p>
+                  </div>
+                  <div class = "col-lg-5">
+                      <p>{{this.homework_desc}}</p>
+                  </div>
+                  <div class = "col-lg-3">
+                      <button data-id ="{{this.id}}" class ="delbtn btn btn-danger">Delete Item</button>
+                  </div>
+          </div>
+      {{/each}}
+</div>
